@@ -9,3 +9,14 @@ C:\Users\maart\source\repos\peakypaint\peakypaint\obj\Debug\peakypaint.csproj.Co
 C:\Users\maart\source\repos\peakypaint\peakypaint\obj\Debug\peakypaint.exe
 C:\Users\maart\source\repos\peakypaint\peakypaint\obj\Debug\peakypaint.pdb
 C:\Users\maart\source\repos\peakypaint\peakypaint\obj\Debug\peakypaint.colorpicker.resources
+C:\Users\guusv\OneDrive\Documents\GitHub\Paint\peakypaint\bin\Debug\peakypaint.exe.config
+C:\Users\guusv\OneDrive\Documents\GitHub\Paint\peakypaint\bin\Debug\peakypaint.exe
+C:\Users\guusv\OneDrive\Documents\GitHub\Paint\peakypaint\bin\Debug\peakypaint.pdb
+C:\Users\guusv\OneDrive\Documents\GitHub\Paint\peakypaint\obj\Debug\peakypaint.csproj.AssemblyReference.cache
+C:\Users\guusv\OneDrive\Documents\GitHub\Paint\peakypaint\obj\Debug\peakypaint.colorpicker.resources
+C:\Users\guusv\OneDrive\Documents\GitHub\Paint\peakypaint\obj\Debug\peakypaint.Form1.resources
+C:\Users\guusv\OneDrive\Documents\GitHub\Paint\peakypaint\obj\Debug\peakypaint.Properties.Resources.resources
+C:\Users\guusv\OneDrive\Documents\GitHub\Paint\peakypaint\obj\Debug\peakypaint.csproj.GenerateResource.cache
+C:\Users\guusv\OneDrive\Documents\GitHub\Paint\peakypaint\obj\Debug\peakypaint.csproj.CoreCompileInputs.cache
+C:\Users\guusv\OneDrive\Documents\GitHub\Paint\peakypaint\obj\Debug\peakypaint.exe
+C:\Users\guusv\OneDrive\Documents\GitHub\Paint\peakypaint\obj\Debug\peakypaint.pdb
