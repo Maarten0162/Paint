@@ -13,9 +13,12 @@ namespace peakypaint
     public partial class colorpicker : Form
     {
         public Color selected { get; set; }
+        private Bitmap pixeldata;
+        private Color clr;
         public colorpicker()
         {
             InitializeComponent();
+            pixeldata = (Bitmap)pictureBox1.Image;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -25,20 +28,20 @@ namespace peakypaint
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
-            Bitmap pixeldata = (Bitmap)pictureBox1.Image;
-            Color clr = pixeldata.GetPixel(e.X, e.Y);
+            
+            clr = pixeldata.GetPixel(e.X, e.Y);
             lbColorPreview.BackColor = clr;
             lbColorValue.Text = "R: " + clr.R.ToString() + " G: " + clr.G.ToString() + " B: " + clr.B.ToString(); 
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
-            Bitmap pixeldata = (Bitmap)pictureBox1.Image;
-            selected = pixeldata.GetPixel(e.X, e.Y);
-            selectedColorPreview.BackColor = selected;
-            nmSelColR.Text = selected.R.ToString();
-            nmSelColG.Text = selected.G.ToString();
-            nmSelColB.Text = selected.B.ToString();
+            
+            
+            selectedColorPreview.BackColor = clr;
+            nmSelColR.Text = clr.R.ToString();
+            nmSelColG.Text = clr.G.ToString();
+            nmSelColB.Text = clr.B.ToString();
         }
 
 
@@ -63,6 +66,11 @@ namespace peakypaint
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void colorpicker_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -34,19 +34,19 @@
             this.lbColorPreview = new System.Windows.Forms.Label();
             this.lbColorValue = new System.Windows.Forms.Label();
             this.gbSelCol = new System.Windows.Forms.GroupBox();
+            this.nmSelColB = new System.Windows.Forms.NumericUpDown();
+            this.nmSelColG = new System.Windows.Forms.NumericUpDown();
+            this.nmSelColR = new System.Windows.Forms.NumericUpDown();
             this.selectedColorPreview = new System.Windows.Forms.Label();
             this.lbBValue = new System.Windows.Forms.Label();
             this.lbGValue = new System.Windows.Forms.Label();
             this.lbRValue = new System.Windows.Forms.Label();
-            this.nmSelColR = new System.Windows.Forms.NumericUpDown();
-            this.nmSelColG = new System.Windows.Forms.NumericUpDown();
-            this.nmSelColB = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbSelCol.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nmSelColR)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nmSelColG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmSelColB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmSelColG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmSelColR)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -106,6 +106,45 @@
             this.gbSelCol.TabStop = false;
             this.gbSelCol.Text = "Selected Color";
             // 
+            // nmSelColB
+            // 
+            this.nmSelColB.Location = new System.Drawing.Point(70, 106);
+            this.nmSelColB.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nmSelColB.Name = "nmSelColB";
+            this.nmSelColB.Size = new System.Drawing.Size(79, 22);
+            this.nmSelColB.TabIndex = 9;
+            this.nmSelColB.ValueChanged += new System.EventHandler(this.nmSelColB_ValueChanged);
+            // 
+            // nmSelColG
+            // 
+            this.nmSelColG.Location = new System.Drawing.Point(70, 71);
+            this.nmSelColG.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nmSelColG.Name = "nmSelColG";
+            this.nmSelColG.Size = new System.Drawing.Size(79, 22);
+            this.nmSelColG.TabIndex = 8;
+            this.nmSelColG.ValueChanged += new System.EventHandler(this.nmSelColG_ValueChanged);
+            // 
+            // nmSelColR
+            // 
+            this.nmSelColR.Location = new System.Drawing.Point(70, 34);
+            this.nmSelColR.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nmSelColR.Name = "nmSelColR";
+            this.nmSelColR.Size = new System.Drawing.Size(79, 22);
+            this.nmSelColR.TabIndex = 7;
+            this.nmSelColR.ValueChanged += new System.EventHandler(this.nmSelColR_ValueChanged);
+            // 
             // selectedColorPreview
             // 
             this.selectedColorPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -141,45 +180,6 @@
             this.lbRValue.TabIndex = 1;
             this.lbRValue.Text = "Red:";
             // 
-            // nmSelColR
-            // 
-            this.nmSelColR.Location = new System.Drawing.Point(70, 34);
-            this.nmSelColR.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.nmSelColR.Name = "nmSelColR";
-            this.nmSelColR.Size = new System.Drawing.Size(79, 22);
-            this.nmSelColR.TabIndex = 7;
-            this.nmSelColR.ValueChanged += new System.EventHandler(this.nmSelColR_ValueChanged);
-            // 
-            // nmSelColG
-            // 
-            this.nmSelColG.Location = new System.Drawing.Point(70, 71);
-            this.nmSelColG.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.nmSelColG.Name = "nmSelColG";
-            this.nmSelColG.Size = new System.Drawing.Size(79, 22);
-            this.nmSelColG.TabIndex = 8;
-            this.nmSelColG.ValueChanged += new System.EventHandler(this.nmSelColG_ValueChanged);
-            // 
-            // nmSelColB
-            // 
-            this.nmSelColB.Location = new System.Drawing.Point(70, 106);
-            this.nmSelColB.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.nmSelColB.Name = "nmSelColB";
-            this.nmSelColB.Size = new System.Drawing.Size(79, 22);
-            this.nmSelColB.TabIndex = 9;
-            this.nmSelColB.ValueChanged += new System.EventHandler(this.nmSelColB_ValueChanged);
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(126, 418);
@@ -203,12 +203,13 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "colorpicker";
             this.Text = "colorpicker";
+            this.Load += new System.EventHandler(this.colorpicker_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbSelCol.ResumeLayout(false);
             this.gbSelCol.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nmSelColR)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nmSelColG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmSelColB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmSelColG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmSelColR)).EndInit();
             this.ResumeLayout(false);
 
         }
