@@ -85,5 +85,10 @@ namespace peakypaint
         {
             brushSize = 20;//kjdaskjdskjasdkldsanlkdsalnmds
         }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            brushSize = 60;//kjdaskjdskjasdkldsanlkdsalnmds
+        }
     }
 }
