@@ -65,5 +65,20 @@ namespace peakypaint
             graphics.DrawEllipse(pen, e.X, e.Y, brushSize, brushSize);
             pbCanvas.Image = canvas;
         }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            brushSize = 5;
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            brushSize = 10;
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            brushSize = 15;
+        }
     }
 }
